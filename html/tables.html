@@ -1,70 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Learn Tables</h1>
-
-    <table border="3" cellspacing="0" cellpadding="10">
-
-        <!-- ROW 1 -->
-        <tr>
-            <th>EMP NO</th>
-            <th>ENAME</th>
-            <th>MGR</th>
-        </tr>
-
-        <!-- ROW 2 -->
-        <tr>
-            <td>1</td>
-            <td>SMITH</td>
-            <td>3</td>
-        </tr>
-
-        <!-- ROW 3 -->
-        <tr>
-            <td>2</td>
-            <td>WARD</td>
-            <td>1</td>
-        </tr>
-
-        <!-- ROW 4 -->
-        <tr>
-            <td>3</td>
-            <td>FORD</td>
-            <td>2</td>
-        </tr>
-
-
-        <!-- ROW 5 -->
-         <tr>
-            <td colspan="3" align="center">End Of Table</td>
-         </tr>
-
-    </table>
-
-    <br><br>
-
-    <table border="1" cellpadding="5">
-        <tr>
-            <td colspan="3" align="center">HTML</td>
-            <!-- <td>HTML</td> -->
-            <!-- <td>HTML</td> -->
-        </tr>
-        <tr>
-            <td rowspan="2">CSS</td>
-            <td colspan="2" align="center">JS</td>
-            <!-- <td>JS</td> -->
-        </tr>
-        <tr>
-            <!-- <td>CSS</td> -->
-            <td>REACT</td>
-            <td>NODE</td>
-        </tr>
-    </table>
+  </head>
+  <body>
     
-</body>
+
+    <br /><br />
+
+    <table border="2" cellpadding="10">
+      <thead>
+        
+        <tr>
+          <th rowspan="3">Day</th>
+          <th colspan="3">Seminar</th>
+        </tr>
+
+        <tr>
+          <th colspan="2">Schedule</th>
+          <th rowspan="2">Topic</th>
+        </tr>
+
+        <tr>
+          <th>Begin</th>
+          <th>End</th>
+        </tr>
+      
+      </thead>
+
+
+      <tbody>
+
+        <!-- MONDAY -->
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 am</td>
+            <td rowspan="2">5:00 pm</td>
+            <td>Introduction to XML</td>
+        </tr>
+
+        <tr>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+
+        <!-- TUESDAY -->
+        <tr>
+            <td rowspan="4">Tuesday</td>
+            <td>8:00</td>
+            <td>11:00</td>
+            <td rowspan="2" style="padding: 20px;">X Path</td>
+        </tr>
+
+        <tr> 
+            <td rowspan="2">11:00</td>
+            <td rowspan="2">2:00</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">XSL Transformation</td>
+        </tr>
+
+        <tr>
+            <td>2:00</td>
+            <td>5:00</td>
+        </tr>
+
+        <!-- WEDNESDAY -->
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00</td>
+            <td>12:00</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+
+      </tbody>
+
+
+
+    </table>
+
+
+  </body>
 </html>
