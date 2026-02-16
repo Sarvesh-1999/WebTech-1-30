@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: gray;
+        color: red;
+      }
+
+      #heading1 {
+        background-color: yellow;
+      }
+      .content {
+        background-color: aqua;
+      }
+      .text-style {
+        font-family: fantasy;
+      }
+      h6 {
+        background-color: lightblue;
+      }
+
+      #head,
+      .wrapper,
+      footer {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Simple Selectors</h1>
+    <!-- 
+        There are 5 types:
+        1) id : used to target element uniquely, represented as #
+        2) class : used to target multiple similar or diffrent elements, represented as dot(.)
+        3) element : used to target multiple same type of elements, represented as tagname
+        4) group : used to group multiple elements, represented as comma(,)
+        5) universal : used to target all elements in html, represented as asterisk(*)
+    -->
+
+    <h1 id="heading1">Target me using ID</h1>
+
+    <div class="content">Target me using CLASSNAME</div>
+    <div class="content">Target me using CLASSNAME</div>
+
+    <section class="content text-style">Target me using CLASSNAME</section>
+
+    <h6>Target me using TAGNAME</h6>
+    <h6>Target me using TAGNAME</h6>
+    <h6>Target me using TAGNAME</h6>
+
+    <header id="head">Target me using GROUP</header>
+    <article class="wrapper">Target me using GROUP</article>
+    <footer>Target me using GROUP</footer>
+  </body>
+</html>
