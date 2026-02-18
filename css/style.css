@@ -1,18 +1,7 @@
-h4 {
-  background-color: lightgreen;
-}
-
-h4 {
+h3{
   background-color: yellow;
 }
-p {
-  background-color: red;
-}
 
-div {
-  background-color: aqua;
-}
-
-h6 {
-  background-color: gold !important ;
+p{
+  background-color: greenyellow ;
 }

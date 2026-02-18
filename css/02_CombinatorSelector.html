@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* DECENDENT: target child as well as nested child */
+      section div {
+        background-color: yellow;
+      }
+      /* CHILD: target direct child */
+      section > div {
+        background-color: blue;
+      }
+
+      /* GENERAL SIBLING: target all div after section closing tag */
+      section ~ div {
+        background-color: lightblue;
+      }
+
+      /* ADJACENT SIBLING: target nearest div after section closing tag */
+      section + nav {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Combinator Selectors</h1>
+
+    <section>
+      <div>div 1</div>
+      <div>div 2</div>
+
+      <article>
+        <div>div 3</div>
+        <div>div 4</div>
+      </article>
+
+      <div>div 5</div>
+    </section>
+    <nav>nav 1</nav>
+    <div>div 6</div>
+    <div>div 7</div>
+    <div>div 8</div>
+  </body>
+</html>
